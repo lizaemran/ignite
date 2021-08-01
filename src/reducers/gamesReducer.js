@@ -10,5 +10,15 @@ switch (action.type){
     default: 
         return {...state}
 }
-}
+};
+//Action Creator
+const fetchGames = () => {
+    return {
+        type: "FETCH_GAMES",
+    };
+};
+
+fetchGames();
+
+
 export default gamesReducer;
